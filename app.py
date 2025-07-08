@@ -1,3 +1,4 @@
+
 from flask import Flask, render_template, request, jsonify
 
 # Step 1: Create the Flask app instance
@@ -6,7 +7,7 @@ app = Flask(__name__)
 # Step 2: Dummy data for photographers (simulating database)
 photographers = [
     {"id": "p1", "name": "Amit Lensman", "skills": ["Wedding", "Portrait"], "image": "a.jpg"},
-    {"id": "p2", "name": "Sana Clickz", "skills": ["Fashion", "Event"], "image": "b.jpg"}
+    {"id": "p2", "name": "Sana Clickz", "skills": ["Fashion", "Event"], "image": "b.jpg"},  
 ]
 
 # Step 3: Dummy availability data mapped by photographer ID
@@ -18,7 +19,7 @@ availability_data = {
 #Home Page
 @app.route('/')
 def home():
-    return render_template('Home.html')
+    return render_template('home.html')
 
 #Booking form route
 @app.route('/book', methods=['GET','POST'])

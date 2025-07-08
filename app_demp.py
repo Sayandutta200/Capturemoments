@@ -1,3 +1,4 @@
+
 from app import Flask, jsonify, request 
 
 # Step 1: Create the Flask app instance
@@ -47,5 +48,3 @@ def book_photographer():
 # Step 4: Start the Flask server
 if __name__ == '__main__':
     app.run(debug=True)
-
-
